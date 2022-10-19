@@ -1,0 +1,28 @@
+{
+    "name": "henrique/benchmark",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "HenriqueRamos\\Benchmark\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Henrique Ramos",
+            "email": "henrique@henriqueramos.eti.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpbench/phpbench": "@dev"
+    },
+    "scripts": {
+        "phpbench": [
+          "@php vendor/bin/phpbench run --report=aggregate"
+        ]
+    }
+}
